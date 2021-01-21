@@ -1,0 +1,23 @@
+{
+  "name": "js-starter",
+  "version": "1.0.0",
+  "description": "@js-starter",
+  "main": "challeng.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohamed24Awwad/js-starter.git"
+  },
+  "author": "awwad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mohamed24Awwad/js-starter/issues"
+  },
+  "homepage": "https://github.com/Mohamed24Awwad/js-starter#readme",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
