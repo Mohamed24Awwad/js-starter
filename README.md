@@ -1,4 +1,4 @@
-_Js-Starter_ 
+_Js-Start_ 
 ============
 Just A repo To share Challenges and Answers in JS Prespective .
 
