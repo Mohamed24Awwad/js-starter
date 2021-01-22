@@ -327,9 +327,32 @@
 // func(1,'hello',true);
 
 
-let car={
-   carName : 'BMW',
-   carPrice : 100000
+// let car={
+//    carName : 'BMW',
+//    carPrice : 100000
+// }
+// console.log(car instanceof Object);
+// console.log(Object.entries(car));
+
+
+// for (let i = 0 ; i<5 ; i++){
+//    console.log('*'.repeat(i));
+// }
+
+// // For each array method 
+// var arr = [1,2,3,4];
+// arr.forEach(function(val){ // callBack Function 
+//    console.log(val);
+// });
+
+
+
+// var myError = new Error('This is an Error');
+// console.log(myError.message);
+function sumObjectValues() {
+   const objectNums = { 'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5 };
+   console.log(Object.values(objectNums).reduce(function (result, num) {
+      return result + num
+   }, 0));
 }
-console.log(car instanceof Object);
-console.log(Object.entries(car));
+sumObjectValues();

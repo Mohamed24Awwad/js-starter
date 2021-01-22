@@ -72,5 +72,6 @@ console.log(newArr);
 
  //#1
 
-
-
+ 
+ const object1 = { 'a': 1 , 'b': 2 , 'c':3 }
+ console.log(Object.values(object1).reduce((a, b) => a + b, 0));
