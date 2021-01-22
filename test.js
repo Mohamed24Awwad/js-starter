@@ -349,10 +349,35 @@
 
 // var myError = new Error('This is an Error');
 // console.log(myError.message);
-function sumObjectValues() {
-   const objectNums = { 'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5 };
-   console.log(Object.values(objectNums).reduce(function (result, num) {
-      return result + num
-   }, 0));
-}
-sumObjectValues();
+// function sumObjectValues() {
+//    const objectNums = { 'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5 };
+//    console.log(Object.values(objectNums).reduce(function (result, num) {
+//       return result + num
+//    }, 0));
+// }
+// sumObjectValues();
+
+
+
+
+// function resversArr() {
+//    arr = [1, 2, 3, 4, 5];
+//    return console.log(arr.reverse());
+// }
+// resversArr();
+
+// function objToArr() {
+//    let car = { a: 1, b: 2, c: 3, d: 4 }
+//    return (console.log(Object.entries(car)));
+// };
+// objToArr();
+
+
+
+// const add =()=>{var a =[2,3];console.log((a[0]+a[1]));}
+// add();
+
+
+   var arr =['john', 'mohamed', 'salah'];
+   let isJhonExist = console.log(`It's`,arr.includes('john') );
+    
