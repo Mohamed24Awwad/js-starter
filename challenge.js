@@ -72,6 +72,10 @@ console.log(newArr);
 
  //#1
 
- 
- const object1 = { 'a': 1 , 'b': 2 , 'c':3 }
- console.log(Object.values(object1).reduce((a, b) => a + b, 0));
+ function sumObjectValues() {
+   const objectNums = { 'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5 };
+   console.log(Object.values(objectNums).reduce(function (result, num) {
+      return result + num
+   }, 0));
+}
+sumObjectValues();
