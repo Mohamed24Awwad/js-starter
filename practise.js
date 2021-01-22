@@ -8,7 +8,7 @@ var num2 = 1 ;
 var result = num2;
 
 for(var i = 1 ; i < 10 ; i++){
-   console.log(`${result}`);
+   console.log(result);
    result = num1 + num2 ;
    num1 = num2 ;
    num2 = result
