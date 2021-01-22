@@ -83,27 +83,14 @@ sumObjectValues();
 
 //======================================== #2 ===============================
 
-
-
-
-
-
-
-
-
-
-
+let arrNumbers = [10, 20 , 30 , 40 ,50];
+let maxNum = Math.max(...arrNumbers);
+console.log(arrNumber.indexOf(maxNum));
 
 //======================================== #3 ===============================
-
-
-
-
-
-
-
-
-
+let arrNumbers = [10, 20, 30, 40, 50];
+let maxNum = Math.max(...arrNumbers);
+console.log('Index of ', arrNumbers.indexOf(maxNum),'\n', `${maxNum} is the Maximum Number In The Array `);
 //======================================== #4 ===============================
 
 
@@ -115,24 +102,36 @@ sumObjectValues();
 
 //======================================== #5 ===============================
 
-
-
-
-
-
-
-
-
-
+function calculator(num1, num2) {
+  function sum() {
+    return num1 + num2;
+  }
+  function sub() {
+    return num1 - num2;
+  }
+  function div() {
+    return num1 / num2;
+  }
+  function mul() {
+    return num1 * num2;
+  }
+  return { sum, sub, div, mul };
+}
+let calc = calculator(8, 10);
+console.log(calc.sum());
+console.log(calc.div());
+console.log(calc.mul());
+console.log(calc.sub());
 //======================================== #6===============================
 
+function multValues() {
+   let firstValue = 12;
+   let lastValue  = 20;
 
+   return [firstValue, lastValue];
 
-
-
-
-
-
+}
+console.log(multValues());
 
 //======================================= #7 ====================================
 function resversArr() {
@@ -155,7 +154,7 @@ objToArr();
 
 
 
-
+ 
 
 
 
@@ -170,3 +169,19 @@ add();
 
 var arr =['john', 'mohamed', 'salah'];
 let isJhonExist = console.log(`It's`,arr.includes('john') );
+
+//another way :) 
+
+let result = arr.find(function (item) {
+   return item == 'john';
+});console.log(result);
+
+//===============================================================Tracing Function=
+const arr = [5,10,20,6];
+const max = arr.reduce((a , b)=> a > b ?  a : b);
+console.log(arr.indexOf(max));
+
+
+/**
+ *  
+ */

@@ -378,6 +378,65 @@
 // add();
 
 
-   var arr =['john', 'mohamed', 'salah'];
-   let isJhonExist = console.log(`It's`,arr.includes('john') );
+   // var arr =['john', 'mohamed', 'salah'];
+   // let isJhonExist = console.log(`It's`,arr.includes('john') );
     
+
+
+   // let arr = [1000, 2000 , 3000 , 4000];
+   // let salaries= arr.map(function (val){return val *2;});
+   // console.log(salaries);
+
+// const students = [
+//    { name: 'ahmed', grade: 80 },
+//    { name: 'ali', grade: 85 },
+//    { name: 'mohamed', grade: 90 },
+
+// ];
+// const stdAfterFilter= students.filter(function (std){
+//    return std.grade > 85 ;
+// });
+// console.log(stdAfterFilter);
+
+
+// const groupNum= [1 , 2 , 3];
+// const sumNumbers= groupNum.reduce(function(result,sum){
+//    return result + sum
+// },0);
+// console.log(sumNumbers);
+
+// const hasPositiveNum = [-1 , -2 , 2 ,-3].some(function(item){
+//       return item > 0;
+// });
+// console.log(hasPositiveNum);
+
+// const hasPositiveNum = [1 , 2 , 3].every(function(item){
+//    return item >0;
+// });
+// console.log(hasPositiveNum);
+
+// var arr =['john', 'mohamed', 'salah'];
+// // let isJhonExist = console.log(`It's`,arr.includes('john') );
+// let result= arr.find(function (item){
+//    return item == 'john';
+// });
+// console.log(result);
+
+
+
+// let arrNumbers = [10, 20 , 30 , 40 ,50];
+// let maxNum = Math.max(...arrNumbers);
+// // console.log('Index of ',arrNumbers.indexOf(maxNum),'\n',`${maxNum} is the Maximum Number In The Array `);
+// const arr = [5,10,20,6];
+// const max = arr.reduce((a , b)=> a > b ?  a : b);
+// console.log(arr.indexOf(max));
+
+
+function multValues() {
+   let firstValue = 12;
+   let lastValue  = 20;
+
+   return [firstValue, lastValue];
+
+}
+console.log(multValues());
