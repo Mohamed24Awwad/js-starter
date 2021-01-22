@@ -8,3 +8,8 @@ Pull to your Local Repo
 git pull https://github.com/Mohamed24Awwad/js-starter.git 
 
 ```
+
+
+>Dependencies
+
+1) `Lite-Server`
