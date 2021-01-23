@@ -432,11 +432,33 @@
 // console.log(arr.indexOf(max));
 
 
-function multValues() {
-   let firstValue = 12;
-   let lastValue  = 20;
+// function multValues() {
+//    let firstValue = 12;
+//    let lastValue  = 20;
 
-   return [firstValue, lastValue];
+//    return [firstValue, lastValue];
 
+// }
+// console.log(multValues());
+
+class book {
+   title;
+   author;
+
+   constructor(title) {
+      this.title = title;
+   }
 }
-console.log(multValues());
+
+const b = new book('mohamed');
+
+console.log(b); 
+
+
+
+
+const arrNew =[1000 , 2000 , 3000];
+let value = arrNew.map(function (val){
+   return val * 2 ;
+})
+console.log(value);
