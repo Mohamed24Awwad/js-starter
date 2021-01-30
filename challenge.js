@@ -242,8 +242,12 @@ class Staff extends Person {
   }
 }
 
-const stf = new Staff("SD", "Cairo", "Alex", 5000);
-console.log(st1.toString());
+const stf1 = new Staff("SD", "Cairo", "Alex", 5000);
+const stf2 = new Staff("DevOps", "Cairo", "Ain Shams", 4000);
+console.log(stf1.toString());
+console.log(stf2.toString());
+
+
 
 // -------------------------------------------------------------------------------------Child 02
 
