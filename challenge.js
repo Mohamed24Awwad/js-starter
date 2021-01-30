@@ -177,3 +177,127 @@ let result = arr.find(function (item) {
 });console.log(result);
 
 
+/*=================================================== OOP Quiz ==========================================================
+=====================================================Question 01=========================================================
+*/
+
+class Person {
+  protected name: string;
+  protected address: string;
+  constructor(name: string, address: string) {
+    this.name = name;
+    this.address = address;
+  }
+  Person() {
+    return ` Person Name Is :${this.name} And Address Is :${this.address}`;
+  }
+
+  get Name(): string {
+    return `Person Name Is : ${this.name}`;
+  }
+  get Address(): string {
+    return `Person Address Is: ${this.address}`;
+  }
+
+  set Address(address: string) {
+    this.address = address;
+  }
+  toString(): string {
+    return `Person Name Is ${this.name} Person Address Is ${this.address}`;
+  }
+}
+
+// -------------------------------------------------------------------------------Child 01
+class Staff extends Person {
+  protected school: string;
+  protected pay: number;
+  constructor(name: string, address: string, school: string, pay: number) {
+    super(name, address);
+    this.name = name;
+    this.address = address;
+    this.school = school;
+    this.pay = pay;
+  }
+  Staff() {
+    return ` Stuff Name Is :${this.name} And Address Is :${this.address} in ${this.school} School and Paying ${this.pay}`;
+  }
+
+  get School(): string {
+    return `Stuff School Is ${this.school}`;
+  }
+
+  set School(school: string) {
+    this.school = school;
+  }
+
+  get Pay(): number {
+    return this.pay;
+  }
+  set Pay(pay: number) {
+    this.pay = pay;
+  }
+
+  toString(): string {
+    return `Staff Name::  ${this.name} Address:: ${this.address} School::${this.school} Pay:: ${this.pay}`;
+  }
+}
+
+const stf = new Staff("SD", "Cairo", "Alex", 5000);
+console.log(st1.toString());
+
+// -------------------------------------------------------------------------------------Child 02
+
+class Student extends Person {
+  protected program: string;
+  protected year: number;
+  protected fee: number;
+  constructor(
+    name: string,
+    address: string,
+    program: string,
+    year: number,
+    fee: number
+  ) {
+    super(name, address);
+    this.name = name;
+    this.address = address;
+    this.program = program;
+    this.year = year;
+    this.fee = fee;
+  }
+
+  Student() {
+    return `Student Name Is: ${this.name} His Addres : ${this.address} Enrolled in Program : ${this.program} In Year : ${this.year} With Fees :${this.fee}  `;
+  }
+
+  get Program() {
+    return `Student Program : ${this.program}`;
+  }
+
+  set Program(program: string) {
+    this.program = program;
+  }
+
+  get Year(): number {
+    return this.year;
+  }
+  set Year(year: number): void {
+    this.year = year;
+  }
+
+  get Fee(): number {
+    return this.fee;
+  }
+  set Fee(fee: number): void {
+    this.fee = fee;
+  }
+
+  toString(): string {
+    return `Student Name Is: ${this.name} His Addres : ${this.address} Enrolled in Program : ${this.program} In Year : ${this.year} With Fees :${this.fee}`;
+  }
+}
+
+const std = new Student("Ahmed", "America", "CS", 2010, 10000);
+console.table(std.toString());
+
+
